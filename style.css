@@ -1,0 +1,16 @@
+:root { color-scheme: light dark; --bg: #F7F4EE; --fg: #1F1B16; --muted: #6B6358; --card: #FFFFFF; --line: #E6E0D6; --accent: #2F4A6D; --gold: #9A6B1F; }
+@media (prefers-color-scheme: dark) { :root { --bg: #141210; --fg: #F2EDE4; --muted: #A79F92; --card: #1F1C19; --line: #332E29; --accent: #8FB0DA; --gold: #E2B866; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+header { margin-bottom: 32px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; color: var(--accent); text-decoration: none; }
+.logo { width: 32px; height: 32px; border-radius: 8px; background: #2F4A6D; }
+h1, h2 { font-family: "New York", ui-serif, Georgia, serif; }
+h1 { font-size: 34px; line-height: 1.2; margin: 16px 0 4px; }
+h2 { font-size: 22px; margin: 36px 0 8px; }
+h3 { font-size: 18px; margin: 24px 0 4px; }
+.muted { color: var(--muted); font-size: 15px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px; margin: 20px 0; }
+a { color: var(--accent); }
+nav { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); display: flex; gap: 20px; flex-wrap: wrap; font-size: 15px; }
